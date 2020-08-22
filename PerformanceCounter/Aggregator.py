@@ -30,7 +30,7 @@ class Aggregator(object):
 
         if count != 0:
             avg_resp_time = sum_resp_time * 1.0 / count
-        tps = int(count * 1.0 / duration_in_millis * 100)
+        tps = int(count * 1.0 / duration_in_millis * 1000)
         request_infos.sort(key=lambda item: item.response_time)
         idx999 = int(count * 0.999)
         idx99 = int(count * 0.99)

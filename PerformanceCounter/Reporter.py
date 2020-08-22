@@ -20,7 +20,8 @@ class ConsoleReporter(object):
             duration_in_millis = duration_in_seconds * 1000
             end_time_in_millis = int(time.time() * 1000)
             start_time_in_millis = end_time_in_millis - duration_in_millis
-            request_infos: Dict[str, List[RequestInfo]] = self._metrics_storage.get_request_infos(start_time_in_millis, end_time_in_millis)
+            request_infos: Dict[str, List[RequestInfo]] = self._metrics_storage.get_request_infos(
+                start_time_in_millis, end_time_in_millis)
             stats: Dict[str, RequestStat] = dict()
             for api_name, request_infos_per_api in request_infos.items():
                 # 2. 根据原始数据，计算得到统计数据
