@@ -2,7 +2,7 @@
 负责提供API， 来采集接口请求的原始数据
 """
 from PerformanceCounter import RequestInfo
-from PerformanceCounter.MetricsStorage import MetricsStorage
+from PerformanceCounter.article26.MetricsStorage import MetricsStorage
 
 
 class MetricsCollector(object):

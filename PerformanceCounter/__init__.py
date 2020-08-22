@@ -1,5 +1,4 @@
 
-
 class RequestInfo(object):
     """
     api请求info类
@@ -22,10 +21,10 @@ class RequestStat(object):
     def __init__(self, max_response_time, min_response_time, avg_response_time,
                  p999_response_time, p99_response_time,
                  count, tps):
-        self._max_response_time = max_response_time
-        self._min_response_time = min_response_time
-        self._avg_response_time = avg_response_time
-        self._p999_response_time = p999_response_time
-        self._p99_response_time = p99_response_time
-        self._count = count
-        self._tps = tps
+        self.max_response_time = max_response_time
+        self.min_response_time = min_response_time
+        self.avg_response_time = avg_response_time
+        self.p999_response_time = p999_response_time
+        self.p99_response_time = p99_response_time
+        self.count = count
+        self.tps = tps
